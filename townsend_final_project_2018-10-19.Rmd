@@ -1,0 +1,30 @@
+---
+title: "townsend_final_project_2018_10_19"
+author: "Meaghan Townsend"
+date: "October 19, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(dplyr)
+library(haven)
+
+raw.data <- read_sav("~/Desktop/ECPP/ecpp_pu_pert.sav")
+```
+
+For my final project, I plan to work with data from the Early Childhood Program Participation (ECPP) study conducted in 2016 by the National Center for Education Statistics (NCES). The ECPP survey collected data from parents about 5,844 American children ages 0-6 who were not yet enrolled in kindergarten. It includes data on children’s participation in relative care, nonrelative care, and center-based care arrangements, as well as  parents' main reason for choosing care, what factors were important to parents when choosing a care arrangement, and parents’ participation in various learning activities with their children. This data is currently in sav format; I may try to locate a csv or other version. There are many (642) variables in this data set to choose from, so I will have to decide where I want to focus my analysis.
+
+# Number of Observations
+```{r}
+raw.data %>%
+  count() 
+```
+
+
+
+
+
+
+
